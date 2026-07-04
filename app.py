@@ -10,12 +10,11 @@ import flask_excel as excel
 import re
 
 mydb = connection.MySQLConnection(
-    user='root',
-    password='admin123',
+    user='flaskuser',
+    password='password',
     host='localhost',
     database='snm'
 )
-
 app = Flask(__name__)
 app.secret_key = 'Code000'
 
